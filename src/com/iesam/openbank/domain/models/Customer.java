@@ -5,6 +5,16 @@ public class Customer extends Person{
     private String poblacion;
     private Integer CodPostal;
     
+    public Customer(String direccion, String poblacion, Integer codPostal, String dni, String nombre, String apellidos) {
+        this.direccion = direccion;
+        this.poblacion = poblacion;
+        CodPostal = codPostal;
+        Person person = new Person();
+        person.setDNI(dni);
+        person.setNombre(nombre);
+        person.setApellidos(apellidos);
+    }
+
     public String getDireccion() {
         return direccion;
     }

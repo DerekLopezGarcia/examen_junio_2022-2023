@@ -1,15 +1,15 @@
 package com.iesam.openbank.domain.models;
 
 public class Person {
-    private Integer DNI;
+    private String DNI;
     private String nombre;
     private String apellidos;
     
-    public Integer getDNI() {
+    public String getDNI() {
         return DNI;
     }
-    public void setDNI(Integer dNI) {
-        DNI = dNI;
+    public void setDNI(String dni) {
+        DNI = dni;
     }
     public String getNombre() {
         return nombre;
