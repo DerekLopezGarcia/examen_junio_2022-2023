@@ -9,6 +9,14 @@ public class Hipoteca implements Producto {
     private Date fechaInicio;
     private Double interes;
     private Date fechaFin;
+    public Hipoteca (String nombre, Integer codigo, String descripcion, Date fechaInicio, Double interes, Date fechaFin){
+        this.nombre=nombre;
+        this.codigo=codigo;
+        this.descripcion=descripcion;
+        this.fechaInicio=fechaInicio;
+        this.interes=interes;
+        this.fechaFin=fechaFin;
+    }
 
     public Date getFechaInicio() {
         return fechaInicio;
